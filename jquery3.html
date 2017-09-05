@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<link href="vaalea.css" rel="stylesheet" type="text/css"> 
+		<script>
+			$(document).ready(function(){
+				$("#hide").click(function(){
+					$("p").hide();
+				});
+				$("#show").click(function(){
+					$("p").show();
+				});
+				$("#animate").click(function(){  
+					var div=$("div"); 
+					div.animate({height:'300px',opacity:'0.4'},"slow"); 
+					div.animate({width:'300px',opacity:'0.8'},"slow"); 
+					div.animate({height:'100px',opacity:'0.4'},"slow"); 
+					div.animate({width:'100px',opacity:'0.8'},"slow");
+					div.delay(1200).animate({left:'200px'},"slow");
+					div.animate({fontSize:'3em'},"slow");
+					div.animate({left:'35px'}, "slow");
+					div.animate({fontSize:'1em'}, "slow")
+				});
+			});
+		</script>	
+	</head>
+	<body>
+		<h1>jQuery testing</h1>
+		<p>Lorem ipsum dolores
+		</p>
+		<button id="hide">Hide text</button>
+		<button id="show">Show text</button>
+		<br>
+		<button id="animate">Animate</button>
+		<div style="width:100px; height:100px; background-color:purple; color:white; position:absolute;">
+		Hey!
+		</div>
+	</body>
+</html>

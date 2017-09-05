@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+body {color:#333;
+      background-color:#152413;
+	  padding-left:20px;}
+
+button {color:#152413;;
+        background-color:#DDD;
+		padding:5px;
+		border-radius:10px;
+		font-weight:900;}
